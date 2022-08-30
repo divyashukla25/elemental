@@ -16,4 +16,4 @@ spec:
         debug: true
   machineName: eone-machine
   machineInventoryLabels:
-    location: "dtwoeurope"
+    location: "eoneeurope"
