@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: vone-nodes
+  name: eone-nodes
   namespace: fleet-default
 spec:
   config:
@@ -12,8 +12,8 @@ spec:
     elemental:
       install:
         reboot: true
-        device: dev/sda
+        device: /dev/sda
         debug: true
-  machineName: vone-machine
+  machineName: eone-machine
   machineInventoryLabels:
     location: "dtwoeurope"
