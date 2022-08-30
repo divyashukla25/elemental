@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: etwo-nodes
+  name: ethree-nodes
   namespace: fleet-default
 spec:
   config:
@@ -12,8 +12,8 @@ spec:
     elemental:
       install:
         reboot: true
-        device: /dev/sda1
+        device: dev/sda
         debug: true
-  machineName: etwo-machine
+  machineName: ethree-machine
   machineInventoryLabels:
-    location: "etwoeurope"
+    location: "ethreeeurope"
