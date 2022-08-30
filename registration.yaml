@@ -1,0 +1,19 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: vone-nodes
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: root
+          passwd: root
+    elemental:
+      install:
+        reboot: true
+        device: /dev/sda1
+        debug: true
+  machineName: vone-machine
+  machineInventoryLabels:
+    location: "dtwoeurope"
