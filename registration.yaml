@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: ethree-nodes
+  name: efour-nodes
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: /dev/sda
         debug: true
-  machineName: ethree-machine
+  machineName: efour-machine
   machineInventoryLabels:
-    location: "ethreeeurope"
+    location: "efoureurope"
