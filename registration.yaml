@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: elementt-nodes
+  name: elementt1-nodes
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: /dev/sda
         debug: true
-  machineName: elementt-machine
+  machineName: elementt1-machine
   machineInventoryLabels:
-    location: "elementteurope"
+    location: "elementt1europe"
