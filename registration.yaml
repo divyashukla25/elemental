@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: efive-nodes
+  name: esix-nodes
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: /dev/sda
         debug: true
-  machineName: efive-machine
+  machineName: esix-machine
   machineInventoryLabels:
-    location: "efiveeurope"
+    location: "esixeurope"
