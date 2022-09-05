@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: eseven-nodes
+  name: testvone-nodes
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,6 @@ spec:
         reboot: true
         device: /dev/sda
         debug: true
-  machineName: eseven-machine
+  machineName: testvone-machine
   machineInventoryLabels:
-    location: "eseveneurope"
+    location: "testvoneeurope"
